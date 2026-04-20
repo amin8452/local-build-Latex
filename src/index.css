@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 39% 11%;
+    --background-elevated: 220 32% 16%;
+    --foreground: 0 0% 100%;
+
+    --card: 220 32% 16%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 220 35% 14%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 142 76% 42%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 142 76% 36%;
+
+    --secondary: 220 25% 22%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 220 25% 20%;
+    --muted-foreground: 220 12% 70%;
+
+    --accent: 142 60% 22%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 28% 22%;
+    --input: 220 30% 14%;
+    --ring: 142 76% 42%;
+
+    --radius: 0.375rem;
+
+    --sidebar-background: 222 39% 11%;
+    --sidebar-foreground: 0 0% 92%;
+    --sidebar-primary: 142 76% 42%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 142 60% 22%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 220 30% 18%;
+    --sidebar-ring: 142 76% 42%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Segoe UI", "Inter", system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .bg-elevated {
+    background-color: hsl(var(--background-elevated));
+  }
+
+  .text-brand {
+    color: hsl(var(--primary));
+  }
+
+  .bg-brand {
+    background-color: hsl(var(--primary));
+  }
+}
