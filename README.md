@@ -45,7 +45,7 @@ L'application est composée de deux parties :
 
 ```bash
 git clone https://github.com/amin8452/local-build-Latex.git
-cd local-build-ide
+cd local-build-Latex
 ```
 
 ### 2. Installer les dépendances
